@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(233, 233, 233);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.insta-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.insta-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.insta-phone img{
+    height: 50rem;
+}
+
+.insta-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 20rem;
+    margin-bottom: 1rem;
+}
+
+.logo{
+    height: 3rem;
+}
+
+.profile-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.insta-login{
+    background-color: #00a0fd;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.insta-logout{
+    color: #00a0fd;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(170, 170, 170);
+}
+
+.link-blue a{
+    color: #00a0fd;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.get-app {/* vazio por enquanto*/
+}
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('./img/googleplay-button.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('./img/apple-button.png');
+}
+
+
+/* media queries */
+
+@media (max-width: 1024px){
+    .insta-wrapper{
+        width: 90%;
+    }   
+}
+
+@media (max-width: 650px) {
+    body{
+        background-color: white;
+    }
+
+    .insta-wrapper{
+        width: 90%;
+    }
+
+    .insta-phone{
+        display: none;
+    }
+
+    .insta-box{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
+}

@@ -1,16 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Orbitron', courier, sans-serif;
     font-size: 14px;
 }
+
+html { 
+    background: url(./img/sandro-katalina-unsplash.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(233, 233, 233);
     margin: 0;
     padding: 0;
     display: flex;
@@ -34,7 +44,9 @@ body{
 
 .insta-phone img{
     height: 50rem;
+    filter: invert(100%);
 }
+
 
 .insta-box{
     display: flex;
@@ -46,14 +58,15 @@ body{
 }
 
 .group{
-    background-color: white;
+    background-color: rgb(14, 13, 13);
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
     padding: 1.3rem 0;
-    border: 1px solid lightgray;
+    border: 1px solid #fe00fe;
+    box-shadow: inset 0 0 1em rgb(0, 0, 0), 0 0 1em #fe00fe;
 }
 
 .group:nth-child(1) {
@@ -75,24 +88,25 @@ body{
 }
 
 .insta-login{
-    background-color: #00a0fd;
-    color: white;
+    background-color: #9625cf;
+    color: #defe47;
     padding: 8px;
     border-radius: 4px;
     margin-top: 1rem;
+    text-transform: lowercase;
 }
 
 .insta-logout{
-    color: #00a0fd;
+    color: #9625cf;
     margin-top: 1rem;
 }
 
 .not-account{
-    color: rgb(170, 170, 170);
+    color: #fe00fe;
 }
 
 .link-blue a{
-    color: #00a0fd;
+    color: #9625cf;
 }
 
 .get-the-app{
@@ -104,7 +118,11 @@ body{
     padding: 1.3rem 0;
 }
 
-.get-app {/* vazio por enquanto*/
+.get-app {
+    color: #defe47;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #fe00fe, 0 0 5px #9625cf;
+    /* vazio por enquanto*/
 }
 .download{
     display: flex;
@@ -115,8 +133,8 @@ body{
 }
 
 .app-download{
-    height: 3rem;
-    width: 10rem;
+    height: 3.1rem;
+    width: 10.5rem;
     background-size: cover;
 }
 

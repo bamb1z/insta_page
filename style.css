@@ -156,10 +156,6 @@ body{
 }
 
 @media (max-width: 650px) {
-    body{
-        background-color: white;
-    }
-
     .insta-wrapper{
         width: 90%;
     }
